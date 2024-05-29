@@ -47,8 +47,10 @@ while True:
 
         elif valor > 0:
             saldo -= valor
-            extrato += f"Saque: R$ {valor:.2f}\n"
             numero_saques += 1
+            extrato += f"Saque: R$ {valor:.2f}{'(':>15}{numero_saques}⁰ saque)\n"
+            
+
 
         else:
             print("Operação falhou! O valor informado é inválido.")
@@ -57,6 +59,7 @@ while True:
         print("\n================ EXTRATO ================")
         print("Não foram realizadas movimentações." if not extrato else extrato)
         print(f"\nSaldo: R$ {saldo:.2f}")
+        print(f"Saque(s) restante(s): {LIMITE_SAQUES-numero_saques}")
         print("==========================================")
 
     elif opcao == "q":
