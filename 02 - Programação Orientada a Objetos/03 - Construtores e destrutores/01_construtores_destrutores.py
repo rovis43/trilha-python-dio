@@ -8,21 +8,21 @@ class Cachorro:
     def __del__(self):
         print("Removendo a instância da classe.")
 
-    def falar(self):
+    def latir(self):
         print("auau")
 
 
-def criar_cachorro():
-    c = Cachorro("Zeus", "Branco e preto", False)
-    print(c.nome)
+# def criar_cachorro():
+#     c = Cachorro("Zeus", "Branco e preto", False)
+#     print(c.nome)
 
 
 c = Cachorro("Chappie", "amarelo")
-c.falar()
+c.latir()
 
-print("Ola mundo")
+# print("Ola mundo")
 
-del c
+# del c
 
 print("Ola mundo")
 print("Ola mundo")

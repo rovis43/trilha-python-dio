@@ -16,15 +16,15 @@ class Bicicleta:
         print("Vrummmmm...")
 
     def __str__(self):
-        return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
+        return f"{self.__class__.__name__}: {', '.join([f'{x}={y}' for x, y in self.__dict__.items()])}"
 
 
-b1 = Bicicleta("vermelha", "caloi", 2022, 600)
-b1.buzinar()
-b1.correr()
-b1.parar()
-print(b1.cor, b1.modelo, b1.ano, b1.valor)
+# b1 = Bicicleta("vermelha", "caloi", 2022, 600)
+# b1.buzinar()
+# b1.correr()
+# b1.parar()
+# print(b1.cor, b1.modelo, b1.ano, b1.valor)
 
 b2 = Bicicleta("verde", "monark", 2000, 189)
-print(b2)
-b2.correr()
+print(b2.__str__())
+# b2.correr()

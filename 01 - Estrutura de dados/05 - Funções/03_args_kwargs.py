@@ -6,6 +6,7 @@ def exibir_poema(data_extenso, *args, **kwargs):
 
 
 exibir_poema(
+    "Segunda-feira, 03 de Junho de 2024"
     "Zen of Python",
     "Beautiful is better than ugly.",
     "Explicit is better than implicit.",
@@ -28,4 +29,5 @@ exibir_poema(
     "Namespaces are one honking great idea -- let's do more of those!",
     autor="Tim Peters",
     ano=1999,
+    site="python.org"
 )
